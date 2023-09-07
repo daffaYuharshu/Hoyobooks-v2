@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hoyobooks</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <div class="jumbotron">
+        <div class="head">
+          <img src="img/hoyo.png" alt="hoyoverse" />
+          <h1>HoyobookS</h1>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#genshin">Genshin Impact</a></li>
+          <li><a href="#honkai">Honkai: Star Rail</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+      <!-- content start -->
+      <section class="content">
+        <section class="card" id="genshin">
+          <article>
+            <h2>Genshin Impact</h2>
+            <h3 class="judul-karakter">Karakter</h3>
+            <section class="content-genshin">
+              <div class="imgslide-genshin">
+                <div class="karakter">
+                  <table>
+                    <tr>
+                      <th>Nama</th>
+                      <td>: Kaedehara Kazuha</td>
+                    </tr>
+                    <tr>
+                      <th>Elemen</th>
+                      <td>: Anemo</td>
+                    </tr>
+                    <tr>
+                      <th>Senjata</th>
+                      <td>: Sword</td>
+                    </tr>
+                    <tr>
+                      <th>Region</th>
+                      <td>: Inazuma</td>
+                    </tr>
+                    <tr>
+                      <th>Rarity</th>
+                      <td>: 5-Star</td>
+                    </tr>
+                  </table>
+                  <img src="img/kazuha2.jpg" alt="Kaedehara Kazuha" />
+                </div>
+              </div>
+              <div class="imgslide-genshin">
+                <div class="karakter">
+                  <table>
+                    <tr>
+                      <th>Nama</th>
+                      <td>: Raiden Shogun</td>
+                    </tr>
+                    <tr>
+                      <th>Elemen</th>
+                      <td>: Electro</td>
+                    </tr>
+                    <tr>
+                      <th>Senjata</th>
+                      <td>: Polearm</td>
+                    </tr>
+                    <tr>
+                      <th>Region</th>
+                      <td>: Inazuma</td>
+                    </tr>
+                    <tr>
+                      <th>Rarity</th>
+                      <td>: 5-Star</td>
+                    </tr>
+                  </table>
+                  <img src="img/raiden.jpg" alt="Raiden Shogun" />
+                </div>
+              </div>
+              <div class="imgslide-genshin">
+                <div class="karakter">
+                  <table>
+                    <tr>
+                      <th>Nama</th>
+                      <td>: Hu Tao</td>
+                    </tr>
+                    <tr>
+                      <th>Elemen</th>
+                      <td>: Pyro</td>
+                    </tr>
+                    <tr>
+                      <th>Senjata</th>
+                      <td>: Polearm</td>
+                    </tr>
+                    <tr>
+                      <th>Region</th>
+                      <td>: Liyue</td>
+                    </tr>
+                    <tr>
+                      <th>Rarity</th>
+                      <td>: 5-Star</td>
+                    </tr>
+                  </table>
+                  <img src="img/hutao2.jpg" alt="Hutao" />
+                </div>
+              </div>
+              <a class="prev" onclick="nextslideGenshin(-1)">&#10094;</a>
+              <a class="next" onclick="nextslideGenshin(1)">&#10095;</a>
+            </section>
+            <section class="desc">
+              <div class="story">
+                <h3>Story</h3>
+                <p>
+                  Genshin Impact terjadi di dunia fantasi Teyvat, rumah bagi
+                  tujuh negara, yang masing-masing terikat pada elemen yang
+                  berbeda dan diperintah oleh dewa yang berbeda. Ceritanya
+                  mengikuti Traveler, yang telah melakukan perjalanan melintasi
+                  dunia yang tak terhitung jumlahnya dengan saudara kembar
+                  mereka sebelum terpisah di Teyvat.
+                </p>
+              </div>
+              <div class="more">
+                <p>
+                  More Information :
+                  <a href="https://genshin.hoyoverse.com/en/">Genshin Impact</a>
+                </p>
+              </div>
+            </section>
+          </article>
+        </section>
+
+        <section class="card" id="honkai">
+          <article>
+            <h2>Honkai: Star Rail</h2>
+            <h3 class="judul-karakter">Karakter</h3>
+            <section class="content-honkai">
+              <div class="imgslide-honkai">
+                <div class="karakter">
+                  <table>
+                    <tr>
+                      <th>Nama</th>
+                      <td>: Bronya</td>
+                    </tr>
+                    <tr>
+                      <th>Path</th>
+                      <td>: Harmony</td>
+                    </tr>
+                    <tr>
+                      <th>Elemen</th>
+                      <td>: Angin</td>
+                    </tr>
+                    <tr>
+                      <th>Region</th>
+                      <td>: Jarilo-VI</td>
+                    </tr>
+                    <tr>
+                      <th>Rarity</th>
+                      <td>: 5-Star</td>
+                    </tr>
+                  </table>
+                  <img src="img/bronya.jpg" alt="Bronya" />
+                </div>
+              </div>
+              <div class="imgslide-honkai">
+                <div class="karakter">
+                  <table>
+                    <tr>
+                      <th>Nama</th>
+                      <td>: Yanqing</td>
+                    </tr>
+                    <tr>
+                      <th>Path</th>
+                      <td>: Hunt</td>
+                    </tr>
+                    <tr>
+                      <th>Elemen</th>
+                      <td>: Es</td>
+                    </tr>
+                    <tr>
+                      <th>Region</th>
+                      <td>: Xianzhou Luofu</td>
+                    </tr>
+                    <tr>
+                      <th>Rarity</th>
+                      <td>: 5-Star</td>
+                    </tr>
+                  </table>
+                  <img src="img/yanqing.webp" alt="Yanqing" />
+                </div>
+              </div>
+              <div class="imgslide-honkai">
+                <div class="karakter">
+                  <table>
+                    <tr>
+                      <th>Nama</th>
+                      <td>: Seele</td>
+                    </tr>
+                    <tr>
+                      <th>Path</th>
+                      <td>: Hunt</td>
+                    </tr>
+                    <tr>
+                      <th>Elemen</th>
+                      <td>: Quantum</td>
+                    </tr>
+                    <tr>
+                      <th>Region</th>
+                      <td>: Jarilo-VI</td>
+                    </tr>
+                    <tr>
+                      <th>Rarity</th>
+                      <td>: 5-Star</td>
+                    </tr>
+                  </table>
+                  <img src="img/seele.jpg" alt="Seele" />
+                </div>
+              </div>
+              <a class="prev" onclick="nextslideHonkai(-1)">&#10094;</a>
+              <a class="next" onclick="nextslideHonkai(1)">&#10095;</a>
+            </section>
+            <section class="desc">
+              <div class="story">
+                <h3>Story</h3>
+                <p>
+                  Honkai Star Rail menceritakan petualangan kelompok yang masuk
+                  ke berbagai planet dan universe yang berbeda. Planet yang
+                  dikunjungi memiliki artefak bernama Stellaron yang juga
+                  menjadi sumber masalah di planet tersebut. Kelompokmu yang
+                  mengendarai kereta bernama Astral Express berusaha mengambil
+                  Stellaron tersebut sekaligus membatu planet yang mereka
+                  kunjungi, lalu pindah ke planet/universe berikutnya.
+                </p>
+              </div>
+              <div class="more">
+                <p>
+                  More Information :
+                  <a href="https://hsr.hoyoverse.com/en-us/"
+                    >Honkai: Star Rail</a
+                  >
+                </p>
+              </div>
+            </section>
+          </article>
+        </section>
+      </section>
+      <!-- content end -->
+
+      <!-- aside start -->
+      <aside class="map">
+        <div class="map-genshin card">
+          <h1>Maps Genshin Impact</h1>
+          <div class="slide-map-genshin">
+            <img src="./img/map/mondstadt.webp" alt="Mondstadt" />
+            <table>
+              <tr>
+                <th>Lokasi</th>
+                <td>: Mondstadt</td>
+              </tr>
+              <tr>
+                <th>Elemen</th>
+                <td>: Anemo</td>
+              </tr>
+            </table>
+          </div>
+          <div class="slide-map-genshin">
+            <img src="./img/map/liyue.jpg" alt="Liyue" />
+            <table>
+              <tr>
+                <th>Lokasi</th>
+                <td>: Liyue</td>
+              </tr>
+              <tr>
+                <th>Elemen</th>
+                <td>: Geo</td>
+              </tr>
+            </table>
+          </div>
+          <div class="slide-map-genshin">
+            <img src="./img/map/inazuma.jpg" alt="Inazuma" />
+            <table>
+              <tr>
+                <th>Lokasi</th>
+                <td>: Inazuma</td>
+              </tr>
+              <tr>
+                <th>Elemen</th>
+                <td>: Electro</td>
+              </tr>
+            </table>
+          </div>
+          <div class="slide-map-genshin">
+            <img src="./img/map/sumeru.webp" alt="Sumeru" />
+            <table>
+              <tr>
+                <th>Lokasi</th>
+                <td>: Sumeru</td>
+              </tr>
+              <tr>
+                <th>Elemen</th>
+                <td>: Dendro</td>
+              </tr>
+            </table>
+          </div>
+          <div class="slide-map-genshin">
+            <img src="./img/map/fontaine.jpg" alt="Fontaine" />
+            <table>
+              <tr>
+                <th>Lokasi</th>
+                <td>: Fontaine</td>
+              </tr>
+              <tr>
+                <th>Elemen</th>
+                <td>: Hydro</td>
+              </tr>
+            </table>
+          </div>
+          <a onclick="nextslideGenshinMap(-1)" class="prev-map">&#10094;</a>
+          <a onclick="nextslideGenshinMap(-1)" class="next-map">&#10095;</a>
+        </div>
+        <div class="map-honkai card">
+          <h1>Maps Honkai: Star Rail</h1>
+          <div class="slide-map-honkai">
+            <img src="./img/map/jarilo.jpg" alt="Jarilo-VI" />
+            <table>
+              <tr>
+                <th>Lokasi</th>
+                <td>: Jarilo-VI</td>
+              </tr>
+              <tr>
+                <th>Path</th>
+                <td>: Preservation</td>
+              </tr>
+            </table>
+          </div>
+          <div class="slide-map-honkai">
+            <img src="./img/map/xianzhou.jpg" alt="Xianzhou" />
+            <table>
+              <tr>
+                <th>Lokasi</th>
+                <td>: Xianzhou: The Luofu</td>
+              </tr>
+              <tr>
+                <th>Path</th>
+                <td>: Hunt</td>
+              </tr>
+            </table>
+          </div>
+          <a onclick="nextslideHonkaiMap(-1)" class="prev-map">&#10094;</a>
+          <a onclick="nextslideHonkaiMap(-1)" class="next-map">&#10095;</a>
+        </div>
+      </aside>
+      <!-- aside end -->
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer>
+      <p>hoyobooks.com copyright 2023</p>
+    </footer>
+    <!-- footer end -->
+  </body>
+</html>

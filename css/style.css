@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a5d7e8;
+  overflow-x: hidden;
+}
+
+header {
+  display: inline;
+  color: #a5d7e8;
+  width: 100%;
+}
+
+header h1 {
+  font-weight: 700;
+}
+
+header img {
+  width: 100%;
+  max-width: 112px;
+}
+
+.head {
+  display: flex;
+  flex: 1;
+}
+
+.jumbotron {
+  background-color: #19376d;
+  padding-top: 2rem;
+  border-bottom: 3px solid #0b2447;
+  display: flex;
+  flex: 1;
+}
+
+nav {
+  background-color: #576cbc;
+  height: 50px;
+  top: 0;
+  position: sticky;
+  text-align: right;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding: 1rem;
+  z-index: 999;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  margin-left: 3rem;
+  color: #a5d7e8;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-weight: 550;
+  color: #0b2447;
+}
+
+article img {
+  max-height: 550px;
+  width: 60%;
+}
+
+.map img {
+  width: 400px;
+}
+.map table {
+  width: 400px;
+}
+
+.map .map-genshin,
+.map .map-honkai {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 32px;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  margin-top: 2.5rem;
+  color: #a5d7e8;
+  font-weight: lighter;
+  padding: 20px;
+  gap: 3rem;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-flow: column nowrap;
+  gap: 7rem;
+}
+
+.card {
+  box-shadow: 2px 2px 8px 2px #19376d;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #0b2447;
+  width: 100%;
+}
+
+article {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.karakter {
+  display: flex;
+  flex: 1;
+  gap: 10rem;
+  margin-left: 2.5rem;
+}
+
+.judul-karakter {
+  text-align: center;
+}
+
+.desc {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-style: italic;
+}
+
+h2 {
+  font-weight: bold;
+  color: #576cbc;
+
+  background-color: #19376d;
+  padding: 1.5rem;
+}
+
+table {
+  text-align: left;
+}
+
+.story {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #19376d;
+  width: 100%;
+}
+
+.story > h3 {
+  margin-bottom: 1rem;
+}
+
+p {
+  text-indent: 2rem;
+}
+
+.more {
+  margin-top: 3rem;
+}
+
+p > a {
+  list-style-type: none;
+  color: #576cbc;
+  text-decoration: none;
+}
+
+p > a:hover {
+  font-weight: 550;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex: 1;
+  background-color: #0b2447;
+  margin-top: 8rem;
+  color: #a5d7e8;
+  height: 100px;
+
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+aside {
+  display: flex;
+  flex: 0;
+  flex-direction: column;
+  gap: 3rem;
+  height: fit-content;
+}
+
+aside table {
+  width: 500px;
+}
+
+.content-genshin,
+.content-honkai {
+  position: relative;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 90%;
+  background-color: white;
+  user-select: none;
+  list-style-type: none;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.prev-map,
+.next-map {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  font-size: 22px;
+  bottom: -0.5%;
+  flex: 1;
+  color: white;
+  opacity: 0.8;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.prev-map:hover,
+.next-map:hover {
+  color: white;
+  opacity: 0.5;
+}
+
+.prev-map {
+  left: 47%;
+}
+
+.next-map {
+  right: 47%;
+}
+
+.prev {
+  left: -1%;
+}
+.next {
+  right: -1%;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+}
+
+.imgslide-genshin,
+.imgslide-honkai {
+  display: none;
+}
+
+/* responsive */
+@media screen and (max-width: 1400px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  article h2,
+  h3 {
+    text-align: center;
+  }
+
+  article h3 {
+    padding-bottom: 1rem;
+  }
+  .karakter {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 5rem;
+  }
+
+  .desc {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .map {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: fit-content;
+    align-self: center;
+  }
+  .map img {
+    width: 400px;
+  }
+  .map table {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .map {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 100%;
+    align-self: center;
+  }
+  .map img {
+    width: 100%;
+  }
+  .map table {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .map {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+  }
+  .map img {
+    width: 100%;
+  }
+  .map table {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 680px) {
+  article img {
+    width: 50%;
+    height: fit-content;
+  }
+}
